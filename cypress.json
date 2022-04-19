@@ -1,0 +1,26 @@
+{
+  "baseUrl": "https://wikipedia.org",
+  "defaultCommandTimeout": 6000,
+  "pageLoadTimeout": 4000,
+  "viewportHeight": 1028,
+  "viewportWidth": 1920,
+  
+  "chromeWebSecurity": false,
+  "failOnStatusCode": false,
+  "env": {
+    "username": "",
+    "password": ""
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "reportFilename": "report",
+    "overwrite": true,
+    "html": true,
+    "json": true,
+    "charts": true
+       },
+
+  "video": true,
+  "projectId": "9fzcbo"
+}

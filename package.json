@@ -1,15 +1,16 @@
 {
   "name": "cydeocypress",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "Alerts": "npx cypress run --record --key 3c4653c6-b103-4ce1-be1c-bcafbd6e51c9 --spec 'Cypress-1/cypress/integration/Day3/Alerts.spec.js'",
-    "test": "cypress run -b chrome --headless --spec 'Cypress-1/cypress/integration/1-getting-started/todo.spec.js'"
-  },
+    "testDashboard": "npx cypress run -b chrome --record --key 17a5aa24-2341-402e-ba27-3b34fc5335e8 --spec 'cypress/integration/1-getting-started/todo.spec.js'",
+    "testCypress": "npx cypress run -b chrome --spec 'cypress/integration/1-getting-started/todo.spec.js'"
+   },
   "author": "Altay",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.5.4",
+    "cypress": "^9.5.1",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-wait-until": "^1.7.2",
@@ -18,6 +19,5 @@
   },
   "dependencies": {
     "cypress-downloadfile": "^1.2.1"
-  },
-  "description": ""
+  }
 }
