@@ -1,13 +1,13 @@
 {
-  "name": "cydeocypress",
+  "name": "cypress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "testDashboard": "npx cypress run -b chrome --record --key 17a5aa24-2341-402e-ba27-3b34fc5335e8 --spec 'cypress/integration/1-getting-started/todo.spec.js'",
-    "testCypress": "npx cypress run -b chrome --spec 'cypress/integration/1-getting-started/todo.spec.js'"
+    "testDashboard": "npx cypress run -b chrome --record --key 17a5aa24-2341-402e-ba27-3b34fc5335e8 --spec 'cypress/integration/Day1/checkboxes.spec.js'",
+    "testCypress": "npx cypress run -b chrome --spec 'cypress/integration/Day1/checkboxes.spec.js'"
    },
-  "author": "Altay",
+  "author": "CihanGuler",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^9.5.1",
