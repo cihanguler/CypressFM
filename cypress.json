@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://wikipedia.org",
+  "baseUrl": "https://www.google.com",
   "defaultCommandTimeout": 6000,
   "pageLoadTimeout": 4000,
   "viewportHeight": 1028,

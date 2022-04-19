@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-03-16T20:18:24.432Z",
-    "end": "2022-03-16T20:18:28.132Z",
-    "duration": 3700,
+    "start": "2022-04-19T13:43:40.274Z",
+    "end": "2022-04-19T13:43:45.176Z",
+    "duration": 4902,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "6076fd4e-cbc0-4e5e-adb5-fb5719f7e86a",
+      "uuid": "c25ad89b-96c7-4269-948a-b1071366ca94",
       "title": "",
-      "fullFile": "cypress/integration/Day2/File_Uploads.spec.js",
-      "file": "cypress/integration/Day2/File_Uploads.spec.js",
+      "fullFile": "cypress/integration/Day1/checkboxes.spec.js",
+      "file": "cypress/integration/Day1/checkboxes.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "43e5f60a-c852-4ea6-9535-6d86858cebd0",
-          "title": "File Upload",
+          "uuid": "281686b6-9b67-4517-83e6-3832cb57c717",
+          "title": "checkboxes Testing",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Png file upload",
-              "fullTitle": "File Upload Png file upload",
+              "title": "checkboxes Test",
+              "fullTitle": "checkboxes Testing checkboxes Test",
               "timedOut": null,
-              "duration": 1785,
+              "duration": 2670,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('http://practice.cybertekschool.com/upload');\ncy.get('#file-upload').attachFile('download.png');\ncy.get('[class=\"button\"]').click();\ncy.get('#uploaded-files').invoke('text', 'download.png').should('be.visible');",
+              "code": "cy.visit('http://practice.cybertekschool.com/checkboxes');\ncy.get('#box1').check().should('be.checked');\ncy.wait(1000);\ncy.get('[name=\"checkbox2\"]').click().should('not.be.checked');",
               "err": {},
-              "uuid": "85d39058-f0ea-47b4-a2e9-2ebfab4ab4dd",
-              "parentUUID": "43e5f60a-c852-4ea6-9535-6d86858cebd0",
+              "uuid": "c4c2fc44-566e-4100-98f8-3d280a935a27",
+              "parentUUID": "281686b6-9b67-4517-83e6-3832cb57c717",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "85d39058-f0ea-47b4-a2e9-2ebfab4ab4dd"
+            "c4c2fc44-566e-4100-98f8-3d280a935a27"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1785,
+          "duration": 2670,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -96,7 +96,7 @@
       "options": {
         "reportDir": "cypress/reports",
         "reportFilename": "report",
-        "overwrite": false,
+        "overwrite": true,
         "html": true,
         "json": true,
         "charts": true
